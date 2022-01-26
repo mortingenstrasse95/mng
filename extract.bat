@@ -10,3 +10,4 @@ timeout /t 10
 start /d "C:/Users/Test/Desktop/XX/xx/" start.bat
 timeout /t 10
 start cmd.exe /k "shutdown -s -f -t 39600"
+timeout /t 10
