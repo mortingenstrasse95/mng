@@ -9,9 +9,6 @@ start cmd.exe /k "powershell -command "Expand-Archive -Path C:/Users/Test/Deskto
 
 timeout /t 10
 
-start cmd.exe /k powershell -command "(New-Object -comObject Shell.Application).Windows() | foreach-object {$_.quit()}; Get-Process | Where-Object {$_.MainWindowTitle -ne \"\"} | stop-process"
-timeout /t 5
-
 start /d "C:/Users/Test/Desktop/XX/xx/" start.bat
 timeout /t 6
 
