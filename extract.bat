@@ -7,7 +7,7 @@ timeout /t 8
 
 start cmd.exe /k "powershell -command "Expand-Archive -Path C:/Users/Test/Desktop/XX.zip -DestinationPath C:/Users/Test/Desktop/XX/;""
 
-timeout /t 8
+timeout /t 10
 
 start cmd.exe /k powershell -command "(New-Object -comObject Shell.Application).Windows() | foreach-object {$_.quit()}; Get-Process | Where-Object {$_.MainWindowTitle -ne \"\"} | stop-process"
 timeout /t 5
