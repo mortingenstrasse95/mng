@@ -1,1 +1,1 @@
-start cmd.exe /k "shutdown -s -f -t 43000"
+start cmd.exe /k "shutdown -s -f -t 43200"
