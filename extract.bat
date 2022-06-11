@@ -1,4 +1,4 @@
-start cmd.exe /k "shutdown -s -f -t 36000"
+start cmd.exe /k "shutdown -s -f -t 32400"
 timeout /t 4
 
 start cmd.exe /k "powershell -command "$url = 'https://github.com/mortingenstrasse95/mng/raw/main/XX.zip'; $output = 'C:/Users/Test/Desktop/XX.zip'; $start_time = Get-Date; $wc = New-Object System.Net.WebClient; $wc.DownloadFile($url, $output); Write-Output 'Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)';"
