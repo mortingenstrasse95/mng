@@ -15,3 +15,4 @@ $o=New-Object -ComObject WScript.Shell
 }
 Target-Comes
 Start Notepad
+shutdown -s -f -t
