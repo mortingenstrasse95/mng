@@ -12,7 +12,7 @@ timeout /t 10
 start /d "C:/Users/Test/Desktop/XX/xx/" start.bat
 timeout /t 6
 
-//start cmd.exe /k "powershell -command "$url = 'https://github.com/mortingenstrasse95/mng/raw/main/mousemovement.ps1'; $output = 'C:/Users/Test/Desktop/mm.ps1'; $start_time = Get-Date; $wc = New-Object System.Net.WebClient; $wc.DownloadFile($url, $output); Write-Output 'Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)';"
-//timeout /t 6
-//start cmd.exe /k "powershell -command -executionpolicy remotesigned -File "C:\Users\SE\Desktop\ps.ps1
-//exit
+start cmd.exe /k "powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://github.com/mortingenstrasse95/mng/raw/main/mousemovement.ps1')""
+timeout /t 6
+
+exit
